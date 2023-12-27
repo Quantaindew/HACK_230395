@@ -1,0 +1,18 @@
+{
+    "locations": {
+        "travel_plan": [
+            {
+                "place_name": "Gateway of India",
+                "location": "Apollo Bandar, Colaba, Mumbai, Maharashtra 400001, India",
+                "start_time": "2023-12-30T09:00:00+05:30",
+                "end_time": "2023-12-30T11:00:00+05:30"
+            },
+            {
+                "place_name": "Juhu Beach",
+                "location": "Juhu, Mumbai, Maharashtra, India",
+                "start_time": "2023-12-30T13:00:00+05:30",
+                "end_time": "2023-12-30T15:00:00+05:30"
+            }
+        ]
+    }
+}
