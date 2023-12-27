@@ -7,7 +7,7 @@ You can watch a video demo of our project: [Google Drive Video Folder](https://d
 
 ## *Vision of FetchAI*
 - Automate repetitive tasks
-- Remove decentralisation
+- Remove centralisation
 - Replacing so many applications on our mobile phone with autonomous agents
 
 ## Project Information
