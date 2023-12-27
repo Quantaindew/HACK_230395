@@ -20,6 +20,10 @@ Wish you had a digital twin who makes your life easier by maximizing your produc
 
 Well, this is absolutely what our project aims for! Let's dive in
 
+### Assumptions made
+- Each cab service agent would be deployed already on the fetch network.
+- Currently we have pre determined the order of actions being performed between the agents. We assume DeltaV is gonna provide this functionality of deciding the optimal assembly of agents best facilitating the given user query.
+
 ## *Agents used in our Project, aligning with Vision of FetchAI*
 1. User Agent
   - Interacts with other agents based on user input query
@@ -27,24 +31,28 @@ Well, this is absolutely what our project aims for! Let's dive in
   - Aims to maximize the economic value of the user while also providing the best options towards user query
 2. Travel Agent
   - Gives a travel plan according to user travel needs and preferences
-  - Has the capability to call the calender agent and set up reminders for all set of events in our travel plan 
-2. Calender Agent
-  - Puts up reminders for various events in our google calender
-  - Puts up a agent prefix on our events added to
+  - Has the capability to call the calender agent and set up reminders for all set of events in our travel plan .
 3. Cab Service Agent
   - Every cab driver owns its own cab service agent in accordance with a decentralised economy of agents.
-  - Has the communicate with the call the travel agent 
+  - Has the communication capability to *call the travel agent*.
+4. Calender Agent
+  - Puts up reminders for various events in our google calender
+  - Can give the list of free slot within a time range to facilitate booking of appointments
+  - Puts up a agent prefix on our events added to the calender. Also puts up the agent address of the agent the event is catering to.
+
 
 ## Sample Flow of our Personal Assistant
 1. User puts up a query "I am new to Delhi, suggest me a travel plan this weekend"
 2. *User Agent* captures the query and calls the *Travel Agent* to get a list of latest travel plans that align with user preferences.
 3. *Travel agent* responds with the list of travelling options.
 4. *User agent* interacts with the user and gets the list of travel options confirmed.
-5. *User agent* calls the *calender agent* to schedule the reminders for events in travel plans6.  *User agent* calls the *travel agent* to schedule the cab service.
-7.  *Travel agent* broadcasts the travel source and destinations to *cab service agent*  
+5. *User agent* calls the *calender agent* to schedule the reminders for events in travel plans. The reminders are setup with certain agent suffix to distinguish the address of the agent it indicates to.
+6. *User agent* calls the *travel agent* to schedule the cab service.
+7. *Travel agent* broadcasts the travel source and destinations to *cab service agents.*  
 8. Multiple cab service agents responds with their availability and location details back to the *user agent*. Finds the best economic value option for the user.
 9. *User agent* interacts with the user and confirms one cab service and call the *cab service agent*
-10. *Cab service agent* books the cab.
+10.*Cab service agent* books the cab.
+
 
 *Screenshots:*
 ## Screenshots
@@ -54,50 +62,39 @@ Reminder autonomously setup by calender agent
 *Technology Stack:*
 - Python
 - Fetch.ai uAgent Library
-- ngrok
 - Agentverse
-
-Project Architecture
-
 
 ## Getting Started
 
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Node.js and npm installed on your development machine.
-- Python installed for the backend.
-
 ### Installation
-
-#### React Frontend
 
 1. Clone the repository:
 
-   bash
-   git clone https://github.com/RuchikaSuryawanshi7/HackAI-Fledglings.git
+   ```git clone https://github.com/RuchikaSuryawanshi7/HackAI-Fledglings.git```
 
 
 2. Install the required dependencies
 
-bash
-cd temperature-alert-agent
-Install dependencies:
-pip install -r requirements.txt
+    
+    ```
+    cd temperature-alert-agent
+    Install dependencies:
+    pip install -r requirements.txt
+    ```
 
 
 3. Initialise the environment
 
-bash
-poetry install
-poetry shell
+    ```
+    poetry install
+    poetry shell
+    ```
 
 4. Running the ecosystems of agents
 
-bash
-python main.py
-python app.py
-python cab_booking.py
-```
+    ```
+    python main.py
+    python app.py
+    python cab_booking.py
+    ```
 Run the above commands in order in different terminals
