@@ -40,6 +40,8 @@ Well, this is absolutely what our project aims for! Let's dive in
   - Can give the list of free slot within a time range to facilitate booking of appointments
   - Puts up a agent prefix on our events added to the calender. Also puts up the agent address of the agent the event is catering to.
 
+![Screenshot (1383)](https://github.com/AryanShr/HACK_230395/assets/75170293/60b174d3-9f8b-4d3f-8306-ae5fbcb5ade6)
+
 
 ## Sample Flow of our Personal Assistant
 1. User puts up a query "I am new to Delhi, suggest me a travel plan this weekend"
@@ -70,7 +72,7 @@ Reminder autonomously setup by calender agent
 
 1. Clone the repository:
 
-   ```git clone https://github.com/RuchikaSuryawanshi7/HackAI-Fledglings.git```
+   ```git clone https://github.com/AryanShr/HACK_230395.git```
 
 
 2. Install the required dependencies
